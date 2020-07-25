@@ -1,0 +1,361 @@
+@import url(https://fonts.googleapis.com/css?family=Montserrat);
+:host{
+  width: 59%;
+  border: 1px solid black;
+  padding:20px;
+}
+#ed-_3,
+#pr-_3 {
+  margin: 0 auto;
+}
+
+#ed-_3,
+#pr-_3 {
+  border-color: #4c7ba0;
+  border-style: solid;
+  border-width: 0;
+}
+
+.module-container {
+  background-size: cover;
+  display: inline-block;
+  float: none !important;
+  margin: 12px auto;
+  max-width: 100%;
+  padding: 0;
+  vertical-align: top;
+}
+
+@media (min-width: 768px) {
+  .col-sm-8 {
+    width: 66.66666667%;
+  }
+}
+
+.resize-item {
+  margin: 0px 0 ;
+}
+
+
+
+@media (min-width: 768px) {
+  .col-sm-1,
+  .col-sm-2,
+  .col-sm-3,
+  .col-sm-4,
+  .col-sm-5,
+  .col-sm-6,
+  .col-sm-7,
+  .col-sm-8,
+  .col-sm-9,
+  .col-sm-10,
+  .col-sm-11,
+  .col-sm-12 {
+    float: left;
+  }
+}
+
+.col-xs-1,
+.col-sm-1,
+.col-md-1,
+.col-lg-1,
+.col-xs-2,
+.col-sm-2,
+.col-md-2,
+.col-lg-2,
+.col-xs-3,
+.col-sm-3,
+.col-md-3,
+.col-lg-3,
+.col-xs-4,
+.col-sm-4,
+.col-md-4,
+.col-lg-4,
+.col-xs-5,
+.col-sm-5,
+.col-md-5,
+.col-lg-5,
+.col-xs-6,
+.col-sm-6,
+.col-md-6,
+.col-lg-6,
+.col-xs-7,
+.col-sm-7,
+.col-md-7,
+.col-lg-7,
+.col-xs-8,
+.col-sm-8,
+.col-md-8,
+.col-lg-8,
+.col-xs-9,
+.col-sm-9,
+.col-md-9,
+.col-lg-9,
+.col-xs-10,
+.col-sm-10,
+.col-md-10,
+.col-lg-10,
+.col-xs-11,
+.col-sm-11,
+.col-md-11,
+.col-lg-11,
+.col-xs-12,
+.col-sm-12,
+.col-md-12,
+.col-lg-12 {
+  position: relative;
+  min-height: 1px;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.resize-grip.left {
+  left: -7px;
+  right: auto;
+}
+
+.resize-grip {
+  display: none;
+  z-index: 110;
+}
+
+.resize-grip,
+.re-sizing #modules-edit-main {
+  cursor: e-resize;
+}
+.ui-resizable-handle {
+  position: absolute;
+  font-size: 0.1px;
+  display: block;
+  -ms-touch-action: none;
+  touch-action: none;
+}
+
+.ui-resizable-disabled .ui-resizable-handle,
+.ui-resizable-autohide .ui-resizable-handle {
+  display: none;
+}
+
+.resize-grip,
+.border-panel,
+.grid-div-wrapper {
+  height: 100%;
+  position: absolute;
+}
+
+.resize-grip .resize-rect {
+  background-color: #fff;
+  border: 2px solid #001926;
+  border-radius: 4px;
+  height: 16px;
+  margin-top: -8px;
+  top: 50%;
+  width: 16px;
+}
+
+.border-panel-container,
+.resize-grip .resize-rect,
+.module {
+  position: relative;
+}
+
+.module {
+  color: #052b3e;
+}
+
+.module .header-container {
+  min-height: 0;
+  overflow: hidden;
+  padding: 13px 13px 0;
+  position: relative;
+  z-index: 2;
+}
+
+#ed-_3 .header,
+#pr-_3 .header,
+#ed-_3 .donut-label,
+#pr-_3 .donut-label {
+  color: #4c7ba0;
+}
+
+.module:not(.canvas-module) .header {
+  color: #4c7ba0;
+  font-family: Proxima-Light, Helvetica, sans-serif;
+  font-size: 30px;
+  margin: 0 !important;
+  padding: 0;
+  text-align: left;
+}
+
+
+.fr-view {
+  color: inherit;
+  overflow: visible;
+  text-align: inherit;
+}
+
+
+#ed-_3 h1,
+#pr-_3 h1,
+#ed-_3 h2,
+#pr-_3 h2,
+#ed-_3 h3,
+#pr-_3 h3,
+#ed-_3 h4,
+#pr-_3 h4,
+#ed-_3 .title > *:not(.fr-wrapper):first-child,
+#pr-_3 .title > *:not(.fr-wrapper):first-child,
+#ed-_3 .title .fr-view > *:first-child,
+#pr-_3 .title .fr-view > *:first-child {
+  color: #4c7ba0;
+}
+
+
+#ed-_3 .header,
+#pr-_3 .header,
+#ed-_3 .donut-label,
+#pr-_3 .donut-label {
+  color: #4c7ba0;
+}
+
+.donut-module .breakup-row .close-btn-container {
+  display: inline-block;
+  height: 17px;
+  margin-left: 8px;
+  overflow: hidden;
+  position: absolute;
+  // top: 2px;
+  width: 16px;
+  right: 0;
+  margin-top: 2%
+}
+
+
+
+.error-total-exceed{
+  color: red
+}
+.color{
+  border-radius: 100% !important;
+}
+.row{
+  display: block !important;
+  margin-right: 0px !important; 
+  margin-left: 0px !important;
+  padding-left: 6px;
+  padding-bottom: 8px;
+}
+
+.display{
+  display: none;
+}
+
+.setWordBreak{
+  word-break: break-word !important;
+}
+.border,.border:hover,.border:focus,.border:active{
+  border: none !important;
+}
+.withBorder {
+  /* // border: 1px solid !important; */
+  margin: 0px 0;
+}
+.fr-box.custom-theme.fr-inline {
+  width :auto !important ;
+}
+.setAnimatedchart{
+  position: static !important ;
+  left:auto !important;
+  top : auto !important;
+  min-width: 18px !important;
+  // margin-top:1px !important;
+  margin-right: 8px !important; 
+  width: 25px;
+  height: 25px;
+  margin-top: 21px;
+}
+
+.removePadding{
+  padding-right: 0px;
+  padding-left: 0px;
+}
+
+.bottom-handler{
+  height: 0px;
+  border: 0.5px solid  mediumaquamarine;
+  display: none;
+  cursor: s-resize;
+  right: 0;
+  left: 0;
+}
+
+.right-handler{
+  border: 0.5px solid   mediumaquamarine;
+  width: 0px;
+  right: 0;
+  display: none;
+  cursor: e-resize;
+}
+.left-handler{
+  border: 0.5px solid   mediumaquamarine;
+  width: 0px;
+  left: 0;
+  display: none;
+  /* cursor: e-resize; */
+}
+.ui-top-s {
+  /* cursor: s-resize; */
+  height: 2px;
+  width: 100%;
+  top: 0px;
+  left: 0;
+}
+.ui-right-e {
+  cursor: e-resize;
+  width: 2px;
+  right: 0px;
+  top: 0;
+}
+.ui-bottom-s {
+  cursor: s-resize;
+  height: 2px;
+  width: 100%;
+  bottom: 0px;
+  left: 0;
+}
+.ui-left-e{
+  /* cursor: e-resize; */
+  width: 2px;
+  left: 0px;
+  top: 0;
+}
+.makeItVisible{
+  display: block !important;
+}
+.donut-module .pie-col{
+  padding : 0px ;
+  max-width: unset;
+}
+.donut-module .breakup-col{
+  width: auto;
+  text-align: left;
+} 
+.setNewDisplay{
+  display: flex;
+  justify-content: center !important;
+}
+.forStandard{
+    display: inline-block;
+    width: 25px;
+    height: 25px;
+    margin-top: 21px;
+    margin-right: 10px;
+}
+p:focus{
+  border: none ;
+  outline: none;
+}
+h3:focus{
+  border: none ;
+  outline: none;
+}

@@ -1,0 +1,107 @@
+
+    <div class="resize-item dyn-elem element-hover" id="parentDiv"
+    id="elem_{{elementData['element_prop']._id}}">
+    
+          <div 
+          class="resize-data border element-el-setting" id="pie{{random}}">
+            <div  class="row pie-chart">
+                <div id="pieChartBlock{{random}}" [ngStyle]="{
+                    textAlign:  ( mobileView) ?  'center' :''
+                  }"  class="donut-module" [class.fr-colmd1siv]="addNewClass">
+                   
+    
+    
+                    <div >
+                        <h3 id="auto{{random}}" *ngIf="!elementData['element_prop']._isAnimated" style="font-family: montserrat;font-size: 58px;line-height: 24px;" contenteditable="true">Standard {{ elementData['element_content'].pie_title}}</h3>
+                        <h3 id="auto{{random}}" *ngIf="elementData['element_prop']._isAnimated" style="font-family: montserrat;font-size: 58px;line-height: 24px;" contenteditable="true">Animated {{ elementData['element_content'].pie_title}}</h3>
+
+                    </div>
+                   <div [ngStyle]="{
+                    display:  ( !elementData['element_prop']._isAnimated)   ?  'flex' :''}">
+                    <div class="pie-col" #imageResizable id="image{{ random }}" [ngStyle]="{
+                        display:  ( elementData['element_prop']._isAnimated)   ?  'block' :'inline-block',
+                        width :   elementData['element_prop'].width ,
+                        margin : ( elementData['element_prop']._isAnimated ) ?  'auto' : '',
+                        marginRight : !elementData['element_prop']._isAnimated ? '2%':'auto'
+                      }" 
+                      [style.padding-bottom] = "( elementData['element_prop']._isAnimated ) ?  '0px' :''"
+                      [style.position]="relative">
+    
+                            <svg  viewBox="-1 -1 2 2" id="svgout" ></svg>
+                            <!-- <div   id="img-support-right{{ random }}" class="ui-resizable-handle ui-right-e right-handler"
+                            [style.right]="0"[style.height]="'100%'"></div>
+                            <div  id="img-support-bottom{{ random }}" class="ui-resizable-handle ui-bottom-s  bottom-handler"
+                            [style.width]="'100%'"></div>
+                            <div  id="img-support-top{{ random }}" class="ui-resizable-handle ui-top-s  bottom-handler" [style.top]='0'
+                            [style.width]="'100%'"></div>
+                            <div   id="img-support-left{{ random }}" class="ui-resizable-handle ui-left-e left-handler"
+                            [style.right]="0"[style.height]="'100%'"></div> -->
+                      
+                    </div>
+                    <div id="pieTextArea{{random}}" class="breakup-col" [ngStyle]="{
+                        width :  (elementData['element_prop']._isAnimated ) ?  '100%' :'' ,
+                        display :  (!elementData['element_prop']._isAnimated ) ?  'inline-block' :'',
+                        marginTop :(!elementData['element_prop']._isAnimated ) ? '5%' :''
+                        
+                    }" 
+                        [style.padding-left] = "( elementData['element_prop']._isAnimated ) ?  '0px' :''"
+                        >
+                        <div class="donut-breakup" [style.width]='"100%"'>                                
+                            <div class="breakup-row"
+                            [style.paddingRight] =" '0px'" 
+                            [style.display]="!elementData['element_prop']._isAnimated ?'flex':''"
+                            [ngClass]="{ display: elementData['element_prop']._isAnimated && i!=0 ,
+                            setNewDisplay : elementData['element_prop']._isAnimated && i==0 ,
+                            'removePadding' : elementData['element_prop']._isAnimated
+                            }"
+                             id="displayDiv{{i}}-{{random}}"
+                              *ngFor="let pieList of elementData['element_content'].pie_list; let i = index">
+                                
+                                
+                                <!-- <span class="color" 
+                                 (click)="clickTest($event)"
+                                [cpPosition]="'bottom'"[cpPositionOffset]="'50%'" 
+                                [cpPositionRelativeToArrow]="true"
+                                [(cpPresetColors)]="recentColorArray"
+                                (colorPickerChange)="foo($event,i)" 
+                                (colorPickerClose)="colorpickerClose($event)"
+                                 [(colorPicker)]="pieList.color"
+    
+    
+    
+                                [style.backgroundColor]="pieList.color"></span> -->
+                                <span class="color" 
+                                [ngClass]="{ setAnimatedchart :  elementData['element_prop']._isAnimated ,
+                                forStandard : !elementData['element_prop']._isAnimated}"
+                                  [style.backgroundColor]="pieList.color"></span>
+    
+    
+                                <div class="value fr-box custom-theme " 
+                                [ngStyle]="{
+                                    width:!((!elementData['element_prop']._isAnimated  ) )  ?  '100%' :''}"
+                                [ngClass]="{ 'fr-inline' : (!elementData['element_prop']._isAnimated ) }">
+                                    <div class="fr-wrapper" dir="auto">
+                                        <div class="fr-element fr-view setWordBreak" (focusout)="trigger()" dir="auto">
+                                            <p style="font-family: montserrat;font-size: 23px;line-height: 24px;" (keyup)="PieValchange($event,elementData,i)" id="pie{{random}}-{{i}}"contenteditable="true" >{{pieList.text}}</p>
+                                        </div>
+                                    
+                                </div>
+                                </div>
+                                <!-- <div class="close-btn-container" (click)="removeThisArc(i)" *ngIf="elementData['element_content'].pie_list.length>1 "><span class="item-close-btn" >×</span></div> -->
+                            </div>
+                        </div>
+                        
+                    </div>
+              
+                </div> 
+                <div *ngIf="isValueExceed" class="alert-message error-total-exceed">
+                    <p>
+                        <i class="zmdi zmdi-alert-triangle"></i>
+                        Uh oh, your percentages don't add up to 100%. Adjust the values until they do.
+                    </p>
+                </div>
+                </div>
+            </div>
+          </div>
+    </div>
+    
